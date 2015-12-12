@@ -1,0 +1,39 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "21.1.2"
+
+    defaultConfig {
+        applicationId "com.example.boris.serverconnection"
+        minSdkVersion 17
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            NetworkInterface.getNetworkInterfaces().each {
+                iface ->
+                    iface.inetAddresses.each {
+                        addr ->
+                            if (addr instanceof Inet4Address && !addr.isLoopbackAddress())
+                                project.ext.localIP = addr.hostAddress
+                    }
+            }
+            buildConfigField "String", "rootUrl", "\"http://${project.ext.localIP}:5000/\""
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:22.1.1'
+    compile files('libs/retrofit-1.9.0.jar')
+    compile files('libs/eventbus-2.4.0.jar')
+    compile files('libs/timber-3.1.0.jar')
+}
