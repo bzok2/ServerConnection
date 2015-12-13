@@ -16,14 +16,17 @@ public class MainActivity extends ActionBarActivity {
 
     Context context;
     Button button;
-    CommerceManager commerceManager = new CommerceManager(context);
+    CommerceManager commerceManager;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        context=this;
+        commerceManager = new CommerceManager(context);
         button = (Button) findViewById(R.id.infoButton);
+
 
         button.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {

@@ -25,7 +25,8 @@ android {
                                 project.ext.localIP = addr.hostAddress
                     }
             }
-            buildConfigField "String", "rootUrl", "\"http://${project.ext.localIP}:5000/\""
+                buildConfigField "String", "rootUrl", "\"http://193.50.54.5:8080/API_OnTheRoad_Spring-0.0.1-SNAPSHOT/commerces/get\""
+            //buildConfigField "String", "rootUrl", "\"http://${project.ext.localIP}:5000/\""
         }
     }
 }
