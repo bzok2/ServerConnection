@@ -1,35 +1,35 @@
 {
 	"commerces": [
 	{
-		"id_commerce": "1",
+		"idCommerce": "1",
 		"nom": "Au bon gourmand",
 		"description": "Depuis plus de 20 ans, Au bon gourmand vous propose des plats raffinés",
-		"libelle_type" : "Restaurant",
+		"libelleType" : "Restaurant",
 		"latitude" : "48.776216",
 		"longitude" : "2.314124",
-		"libelle_url_logo" : "",
-		"libelle_rep_photos" : "",
+		"libelleUrlLogo" : "",
+		"libelleRepPhotos" : "",
 		"offres" : [
 
 		{
-			"id_offre" : "1",
+			"idOffre" : "1",
 			"promotion" : "5 € de réduction sur le menu enfant",
 			"description" : "Emmener vos enfants profiter d'un excellent bifteak avec sauce maison",
-			"libelle_rep_photos" : ""
+			"libelleRepPhotos" : ""
 		},
 
 		{
-			"id_offre" : "2",
+			"idOffre" : "2",
 			"promotion" : "50% de réduction sur l'apéritif",
 			"description" : "Vous venez entre amis ? Nous vous proposons l'apéritif à moitié prix !",
-			"libelle_rep_photos" : ""
+			"libelleRepPhotos" : ""
 		},
 
 		{
-			"id_offre" : "3",
+			"idOffre" : "3",
 			"promotion" : "Boisson offerte",
 			"description" : "Vous prenez un plat à emporter, nous vous offrons la boisson",
-			"libelle_rep_photos" : ""
+			"libelleRepPhotos" : ""
 		}
 
 
@@ -38,119 +38,54 @@
 	},
 
 	{
-		"id_commerce": "2",
+		"idCommerce": "2",
 		"nom": "Le BarBar",
 		"description": "Plus de 30 variétés de bières pour votre plus grand plaisir !",
-		"libelle_type" : "Bar",
+		"libelleType" : "Bar",
 		"latitude" : "48.778987",
 		"longitude" : "2.284255",
-		"libelle_url_logo" : "",
-		"libelle_rep_photos" : "",
+		"libelleUrlLogo" : "",
+		"libelleRepPhotos" : "",
 		"offres" : [
 
 		{
-			"id_offre" : "4",
+			"idOffre" : "4",
 			"promotion" : "Happy Hour de 17h à 20h",
 			"description" : "Vous sortez du boulot, nos pintes sont à 3€ jusqu'à 20h !",
-			"libelle_rep_photos" : ""
+			"libelleRepPhotos" : ""
 		},
 
 		{
-			"id_offre" : "5",
+			"idOffre" : "5",
 			"promotion" : "1 € de réduction sur les bières bretonnes",
 			"description" : "Venez profiter de notre large choix de cervoises qui n'attendent que vous !",
-			"libelle_rep_photos" : ""
+			"libelleRepPhotos" : ""
 		}
 
 		]
 	},
 
 	{
-		"id_commerce": "3",
+		"idCommerce": "3",
 		"nom": "Hôtel de la gare",
 		"description": "Votre voyage vous a fatigué, venez vous reposer chez nous, nous vous accueillerons tous les jours avec le sourire !",
-		"libelle_type" : "Hôtel",
+		"libelleType" : "Hôtel",
 		"latitude" : "48.791203",
 		"longitude" : "2.289577",
-		"libelle_url_logo" : "",
-		"libelle_rep_photos" : "",
+		"libelleUrlLogo" : "",
+		"libelleRepPhotos" : "",
 		"offres" : [
 
 		
 
 		{
-			"id_offre" : "6",
+			"idOffre" : "6",
 			"promotion" : "5 nuits la 6ème offerte",
 			"description" : "Utilisez notre carte de fidélité et profitez de nuits gratuites",
-			"libelle_rep_photos" : ""
+			"libelleRepPhotos" : ""
 		},
 
 		]
-	}],
-
-	"utilisateurs": [
-	{
-		"id_utilisateurs": "1",
-		"prenom" : "Fred",
-		"nom" : "Dumoulin",
-		"telephone" : "06 15 48 54 84",
-		"latitude" : "48.776555",
-		"longitude" : "2.326655",
-		"offres" : [
-
-		{
-			"id_offre" : "7",
-			"promotion" : "Canapé à 70€",
-			"description" : "Modèle récent, très peu utilisé, affaire à ne pas manquer !",
-			"libelle_rep_photos" : ""
-		},
-
-		{
-			"id_offre" : "8",
-			"promotion" : "Collection Astérix et Obélix: 30€ le tout",
-			"description" : "Profitez de toute la collection des bandes déssinées Astérix et Obélix pour seulement 30€",
-			"libelle_rep_photos" : ""
-		}]
-	},
-
-	{
-		"id_utilisateurs": "2",
-		"prenom" : "Marie",
-		"nom" : "Rolland",
-		"telephone" : "06 45 26 11 10",
-		"latitude" : "48.753869",
-		"longitude" : "2.302794",
-		"offres" : [
-
-		{
-			"id_offre" : "9",
-			"promotion" : "Samsung Galaxy S5: 350€",
-			"description" : "Légèrement rayé sur l'écran, fonctionne comme le premier jour !",
-			"libelle_rep_photos" : ""
-		}]
-	},
-
-	{
-		"id_utilisateurs": "3",
-		"prenom" : "Antoine",
-		"nom" : "Vaurin",
-		"telephone" : "06 42 23 18 18",
-		"latitude" : "48.741531",
-		"longitude" : "2.28477",
-		"offres" : [
-
-		{
-			"id_offre" : "10",
-			"promotion" : "10€ la table basse",
-			"description" : "Petite table basse rectangulaire, aucune trace, ne manquez pas cette occasion",
-			"libelle_rep_photos" : ""
-		},
-
-		{
-			"id_offre" : "11",
-			"promotion" : "Lit à 100 €",
-			"description" : "Pour cause de déménagement je revend mon lit, très confortable, comme neuf !",
-			"libelle_rep_photos" : ""
-		}]
 	}]
+
 }

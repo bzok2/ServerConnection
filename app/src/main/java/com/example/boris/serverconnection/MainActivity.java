@@ -1,28 +1,29 @@
 package com.example.boris.serverconnection;
 
-import android.content.Intent;
+import android.content.Context;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 
 import com.example.boris.serverconnection.manager.CommerceManager;
 
 
 public class MainActivity extends ActionBarActivity {
 
-    CommerceManager commerceManager ;
+
+    Context context;
     Button button;
+    CommerceManager commerceManager = new CommerceManager(context);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        button = (Button) findViewById(R.id.buttonInfo);
+        button = (Button) findViewById(R.id.infoButton);
 
         button.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {

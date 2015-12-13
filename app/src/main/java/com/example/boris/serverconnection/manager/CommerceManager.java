@@ -40,7 +40,6 @@ public class CommerceManager {
                 Toast.makeText(context, commerces.toString(), Toast.LENGTH_LONG).show();
             }
 
-
             @Override
             public void failure(RetrofitError error) {
                 Toast.makeText(context, "impossible de charger les commerces", Toast.LENGTH_LONG).show();

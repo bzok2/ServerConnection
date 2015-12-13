@@ -4,19 +4,35 @@ package com.example.boris.serverconnection.model;
  * Created by boris on 12/12/2015.
  */
 public class Commerce {
+
     private String nom;
     private String description;
-    private String libelle_type;
-    private Integer latitude;
-    private Integer longitude;
+    private String libelleType;
+    private String latitude;
+    private String longitude;
 
-
-    public String getNom() {
-        return nom;
+    public String getLongitude() {
+        return longitude;
     }
 
-    public void setNom(String nom) {
-        this.nom = nom;
+    public void setLongitude(String longitude) {
+        this.longitude = longitude;
+    }
+
+    public String getLatitude() {
+        return latitude;
+    }
+
+    public void setLatitude(String latitude) {
+        this.latitude = latitude;
+    }
+
+    public String getLibelleType() {
+        return libelleType;
+    }
+
+    public void setLibelleType(String libelleType) {
+        this.libelleType = libelleType;
     }
 
     public String getDescription() {
@@ -27,36 +43,24 @@ public class Commerce {
         this.description = description;
     }
 
-    public String getLibelle_type() {
-        return libelle_type;
+    public String getNom() {
+        return nom;
     }
 
-    public void setLibelle_type(String libelle_type) {
-        this.libelle_type = libelle_type;
-    }
-
-    public Integer getLatitude() {
-        return latitude;
-    }
-
-    public void setLatitude(Integer latitude) {
-        this.latitude = latitude;
-    }
-
-    public Integer getLongitude() {
-        return longitude;
-    }
-
-    public void setLongitude(Integer longitude) {
-        this.longitude = longitude;
+    public void setNom(String nom) {
+        this.nom = nom;
     }
 
     @Override
     public String toString() {
         return "Commerce{" +
                 "nom='" + nom + '\'' +
+                ", description=" + description +
                 ", latitude=" + latitude +
                 ", longitude=" + longitude +
                 '}';
     }
+
+
+
 }
